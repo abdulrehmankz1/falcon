@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous" />
+        <title>Falcon</title>
+    </head>
+
+    <body class="bg-light">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <nav class="navbar" style="display: block;">
+                            <button class="navbar-toggler" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="https://prium.github.io/falcon/v3.9.0/assets/img/icons/spot-illustrations/falcon.png"
+                                    height="40" width="40" alt="" />
+                                falcon</a>
+                        </nav>
+                        <ul class="nav flex-column">
+                            <div class="li-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-circle-half" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                                </svg>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                                </li>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Default</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Analytics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CRM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">E-commerce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SaaS</a>
+                            </li>
+
+                            <div class="row navbar-vertical-label-wrapper li-icon mt-3 mb-2">
+                                <div class="col-auto navbar-vertical-label mt-3">App</div>
+                                <div class="col ps-0">
+                                    <hr class="mb-0 navbar-vertical-divider" />
+                                </div>
+                            </div>
+                            <div class="li-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-calendar-day-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16v9zm-4.785-6.145a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43c0 .238.192.425.43.425zm.336.563h-.672v4.105h.672V8.418zm-6.867 4.105v-2.3h2.261v-.61H4.684V7.801h2.464v-.61H4v5.332h.684zm3.296 0h.676V9.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a1.806 1.806 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98v4.105z" />
+                                </svg>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Calendar</a>
+                                </li>
+                            </div>
+                            <div class="li-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Chat</a>
+                                </li>
+                            </div>
+
+                            <div class="li-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-calendar2-event-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                                </svg>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Events</a>
+                                </li>
+                            </div>
+                            <div class="li-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">E-commerce</a>
+                                </li>
+                            </div>
+                            <div class="li-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bicycle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+                                </svg>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">bike</a>
+                                </li>
+                            </div>
+
+                            <div class="li-icon">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">social</a>
+                                </li>
+                            </div>
+
+                            <div class="row navbar-vertical-label-wrapper li-icon mt-3 mb-2">
+                                <div class="col-auto navbar-vertical-label mt-3">Pages</div>
+                                <div class="col ps-0">
+                                    <hr class="mb-0 navbar-vertical-divider" />
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Starter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Landing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Authentication</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Errors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Miscellaneous</a>
+                            </li>
+
+                            <div class="row navbar-vertical-label-wrapper li-icon mt-3 mb-2">
+                                <div class="col-auto navbar-vertical-label mt-3">Modules</div>
+                                <div class="col ps-0">
+                                    <hr class="mb-0 navbar-vertical-divider" />
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Charts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Maps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Components</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Widgets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Widgets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Multi level</a>
+                            </li>
+
+                            <div class="row navbar-vertical-label-wrapper li-icon mt-3 mb-2">
+                                <div class="col-auto navbar-vertical-label mt-3">
+                                    Documentation
+                                </div>
+                                <div class="col ps-0">
+                                    <hr class="mb-0 navbar-vertical-divider" />
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Getting started</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Customization</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gulp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Design file</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Changelog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9">
+                        <nav class="navbar navbar-expand-sm bg-light">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="col-xs-6">
+                                    <svg style="
+                      position: absolute;
+                      margin-top: 13px;
+                      left: 10px;
+                      align-self: center;
+                    " width="16" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                    <input type="search" class="form-control search-input fuzzy-search"
+                                        placeholder="Search" />
+                                </div>
+
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-cart-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                            </svg></a>
+                                    </li>
+
+                                    <a class="nav-link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                        </svg>
+                                    </a>
+
+                                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-ui-checks-grid"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z" />
+                                        </svg></a>
+                                    <a href="#" style="align-self: center;">
+                                        <img class="rounded-circle"
+                                            src="https://prium.github.io/falcon/v3.9.0/assets/img/team/3-thumb.png"
+                                            height="30" width="30" /></a>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body background-img">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        ">
+                                                <g transform="translate(160 256)">
+                                                    <g transform="translate(0, 32)  scale(0.75, 0.75)  rotate(0 0 0)">
+                                                        <path fill="currentColor"
+                                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                                            transform="translate(-160 -256)"></path>
+                                                    </g>
+                                                </g>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body background-img">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        "></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body background-img">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        ">
+                                                <g transform="translate(160 256)">
+                                                    <g transform="translate(0, 32)  scale(0.75, 0.75)  rotate(0 0 0)">
+                                                        <path fill="currentColor"
+                                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                                            transform="translate(-160 -256)"></path>
+                                                    </g>
+                                                </g>
+                                            </svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body background-img">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512"
+                                                style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        "></svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        ">
+                                                <g transform="translate(160 256)">
+                                                    <g transform="translate(0, 32)  scale(0.75, 0.75)  rotate(0 0 0)">
+                                                        <path fill="currentColor"
+                                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                                            transform="translate(-160 -256)"></path>
+                                                    </g>
+                                                </g>
+                                            </svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512"
+                                                style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        "></svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        ">
+                                                <g transform="translate(160 256)">
+                                                    <g transform="translate(0, 32)  scale(0.75, 0.75)  rotate(0 0 0)">
+                                                        <path fill="currentColor"
+                                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                                            transform="translate(-160 -256)"></path>
+                                                    </g>
+                                                </g>
+                                            </svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512"
+                                                style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        "></svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" data-fa-i2svg="" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        ">
+                                                <g transform="translate(160 256)">
+                                                    <g transform="translate(0, 32)  scale(0.75, 0.75)  rotate(0 0 0)">
+                                                        <path fill="currentColor"
+                                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                                            transform="translate(-160 -256)"></path>
+                                                    </g>
+                                                </g>
+                                            </svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512"
+                                                style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        "></svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                        <a class="btn btn-link fs--1 text-warning mt-lg-3 ps-0" href="#!">Upgrade
+                                            storage<svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-1"
+                                                viewBox="0 0 320 512" style="
+                          height: 20px;
+                          transform-origin: 0.3125em 0.5625em;
+                        ">
+                                                <g transform="translate(160 256)">
+                                                    <g transform="translate(0, 32)  scale(0.75, 0.75)  rotate(0 0 0)">
+                                                        <path fill="currentColor"
+                                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                                            transform="translate(-160 -256)"></path>
+                                                    </g>
+                                                </g>
+                                            </svg><!-- <span class="fas fa-chevron-right ms-1" data-fa-transform="shrink-4 down-1"></span> Font Awesome fontawesome.com --></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card large-card">
+                                    <div class="card-body">
+                                        <h5 class="text-warning">Running out of your space?</h5>
+                                        <p class="fs--1 mb-0">
+                                            Your storage will be running out soon. Get more space and
+                                            powerful productivity features.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>

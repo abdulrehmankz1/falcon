@@ -1,0 +1,73 @@
+body {
+    font-family: var(--falcon-body-font-family);
+    font-size: var(--falcon-body-font-size);
+    font-weight: var(--falcon-body-font-weight);
+    line-height: var(--falcon-body-line-height);
+    color: var(--falcon-body-color);
+    text-align: var(--falcon-body-text-align);
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0px;
+    height: auto !important;
+}
+
+.navbar-brand {
+    font-size: calc(1.2978rem + 0.5736vw) !important;
+    white-space: nowrap;
+    font-weight: 800;
+    color: rgb(44, 123, 229) !important;
+}
+
+ul {
+    list-style: none;
+    line-height: 5px;
+    font-size: 13px;
+}
+
+input {
+    padding-left: 20px !important;
+    border-radius: 20px !important;
+}
+
+::placeholder {
+    padding-left: 15px;
+}
+
+.navbar-toggler {
+    margin-right: 13px !important;
+}
+
+.background-img {
+    background-image: url('https://prium.github.io/falcon/v3.9.0/assets/img/icons/spot-illustrations/corner-1.png');
+    background-repeat: no-repeat;
+    background-size: 150px 170px;
+    background-position: right;
+
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.large-card {
+    height: 385px !important;
+    background-image: url('https://prium.github.io/falcon/v3.9.0/assets/img/icons/spot-illustrations/corner-1.png');
+    background-repeat: no-repeat;
+    background-size: 250px 450px;
+    background-position: right
+}
+
+p {
+    font-size: 14px;
+}
+
+.li-icon {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+a {
+    font-size: 12px;
+    color: black !important;
+}
